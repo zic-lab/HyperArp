@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71A502D8-F39D-41A6-B42D-436AFEA5CF03}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HyperArp.My.MyApplication</StartupObject>
+    <RootNamespace>HyperArp</RootNamespace>
+    <AssemblyName>HyperArp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <HockeyAppResourceId>50e34637ba1947bea5a4e0ba91270fc8</HockeyAppResourceId>
+    <PublishUrl>E:\DEV\69 - HyperArp\essai Publication\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>https://www.compomusic.fr</SupportUrl>
+    <ErrorReportUrl>https://www.compomusic.fr</ErrorReportUrl>
+    <TargetCulture>fr</TargetCulture>
+    <ProductName>HyperArp</ProductName>
+    <PublisherName>Compomusic</PublisherName>
+    <SuiteName>Compomusic</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.2.2.0</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HyperArp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HyperVoicing.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HyperArp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>HyperVoicing.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>DD4833DAA325AD086F0EE45B0767381431593CDA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>HyperArp-48x48.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>Internet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>FicheClefHA.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FlexCell, Version=4.3.6.0, Culture=neutral, PublicKeyToken=6f86587eb70ee309, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\FlexCell Technologies\FlexCell.NET4\bin\FlexCell.dll</HintPath>
+    </Reference>
+    <Reference Include="Midi">
+      <HintPath>Références\midi-dot-net_1.1.0\Midi.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="FlexCell" />
+    <Import Include="HyperArp" />
+    <Import Include="HyperArp.My" />
+    <Import Include="HyperArp.My.Resources" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Midi" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Reflection" />
+    <Import Include="System.Runtime.Hosting" />
+    <Import Include="System.Security" />
+    <Import Include="System.Security.Permissions" />
+    <Import Include="System.Security.Policy" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Automation.vb" />
+    <Compile Include="BoutPerso.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChoixGamme.Designer.vb">
+      <DependentUpon>ChoixGamme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChoixGamme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutomationSup.Designer.vb">
+      <DependentUpon>AutomationSup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AutomationSup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActionsPianoRoll.Designer.vb">
+      <DependentUpon>ActionsPianoRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActionsPianoRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChordRoll.vb" />
+    <Compile Include="FiltreGammes.designer.vb">
+      <DependentUpon>FiltreGammes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FiltreGammes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalquesMIDI.Designer.vb">
+      <DependentUpon>CalquesMIDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CalquesMIDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VéloAleat.Designer.vb">
+      <DependentUpon>VéloAleat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VéloAleat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QBlues2.Designer.vb">
+      <DependentUpon>QBlues2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QBlues2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MotifsForm.Designer.vb">
+      <DependentUpon>MotifsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MotifsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RechercheG_v2.vb" />
+    <Compile Include="Transport.Designer.vb">
+      <DependentUpon>Transport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transition.Designer.vb">
+      <DependentUpon>Transition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mixage.vb" />
+    <Compile Include="DrumEdit.vb" />
+    <Compile Include="Clavier.Designer.vb">
+      <DependentUpon>Clavier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clavier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Extensions.vb" />
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mapping.Designer.vb">
+      <DependentUpon>Mapping.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mapping.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module2.vb" />
+    <Compile Include="QuickBlues.Designer.vb">
+      <DependentUpon>QuickBlues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuickBlues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PianoRoll.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transposition.Designer.vb">
+      <DependentUpon>Transposition.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transposition.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisuN.Designer.vb">
+      <DependentUpon>VisuN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VisuN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageHV.Designer.vb">
+      <DependentUpon>MessageHV.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MessageHV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motifs.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MainArp.vb" />
+    <Compile Include="RechercheG.vb" />
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Harmonie.vb" />
+    <Compile Include="MidifileX.vb" />
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActionsPianoRoll.resx">
+      <DependentUpon>ActionsPianoRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalquesMIDI.resx">
+      <DependentUpon>CalquesMIDI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoixGamme.resx">
+      <DependentUpon>ChoixGamme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiltreGammes.resx">
+      <DependentUpon>FiltreGammes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QBlues2.resx">
+      <DependentUpon>QBlues2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MotifsForm.resx">
+      <DependentUpon>MotifsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transposition.resx">
+      <DependentUpon>Transposition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisuN.resx">
+      <DependentUpon>VisuN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clavier.resx">
+      <DependentUpon>Clavier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutomationSup.resx">
+      <DependentUpon>AutomationSup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transition.resx">
+      <DependentUpon>Transition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapping.resx">
+      <DependentUpon>Mapping.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageHV.resx">
+      <DependentUpon>MessageHV.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickBlues.resx">
+      <DependentUpon>QuickBlues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transport.resx">
+      <DependentUpon>Transport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VéloAleat.resx">
+      <DependentUpon>VéloAleat.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FicheClefHA.pfx" />
+    <None Include="HyperVoicing.ruleset" />
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\FR_Hypervoicing_Manuel.pdf" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FichierListeAccords.csv" />
+    <None Include="Resources\FichierListeGammes-Cubasev2.csv" />
+    <None Include="Resources\FichierListeGammes-Cubasev4.csv" />
+    <None Include="Resources\FichierListeGammes.csv" />
+    <None Include="Resources\fichiers flx\optimisationHA.flx" />
+    <None Include="Resources\NEW_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OPEN_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UNGROUP_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELETE_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UNDO_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CUT_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COPY_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PASTE-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gomme_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HELP2_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Loupe_moins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupePlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupeMoins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Etoile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Base Binaire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Base Ternaire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAVE-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAVE-png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Culture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mappemonde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CultureHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mappemonde2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mappemonde21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CultureHome2_modifié-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOTEBOOK.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flèhe_gauche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flèche_droite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flèhe_gauche_v-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flèche_droite_v-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flèche_haut_v1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flèche_bas_v1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flèche_bas_v2..png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flèche_haut_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VOLUME01.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VOLUME02.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rimshot.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rimshot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rimshotV2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UNGROUP_png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARW06LT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marqueurs3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marqeur4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marqueurs5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marqueurs6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotesAccord2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotesAccord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NotesAccord3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accord3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accord4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accord5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Appli9.ico" />
+    <Content Include="HyperArp-48x48.ico" />
+    <Content Include="HyperArpV4.ico" />
+    <None Include="Resources\467px_Piano12-V4.jpg" />
+    <None Include="Resources\loupe24.png" />
+    <None Include="Resources\loupe32.png" />
+    <None Include="Resources\DELETE_pngRouge.png" />
+    <None Include="Resources\Stop11-64.png" />
+    <None Include="Resources\Play11_64.png" />
+    <None Include="Resources\STOP_V2.png" />
+    <None Include="Resources\JD-02-128.png" />
+    <None Include="Resources\JD-05-128.png" />
+    <None Include="Resources\it-business-722950_1280_V2 %28backup%29.png" />
+    <None Include="Resources\panic-button-1375953_1920.png" />
+    <None Include="Resources\panic-button-1375953_1920.ico" />
+    <None Include="Resources\icons-2188729_1920_ICON2.png" />
+    <None Include="Resources\32x32 - échelle2_Blues.png" />
+    <None Include="Resources\Image2.bmp" />
+    <None Include="Resources\Piano16.jpg" />
+    <None Include="Resources\Piano15.jpg" />
+    <None Include="Resources\Piano14.jpg" />
+    <None Include="Resources\Start24bisvers gauche.png" />
+    <None Include="Resources\Image1.png" />
+    <None Include="Resources\467px_Piano12-V2.jpg" />
+    <None Include="Resources\32x32-Transp-vert -échelle3-.png" />
+    <None Include="Resources\32x32-Transp-orange -échelle3-.png" />
+    <None Include="Resources\32x32-Transp -échelle3-.png" />
+    <None Include="Resources\32x32 - échelle2.png" />
+    <None Include="Resources\345px_Piano12.jpg" />
+    <None Include="Resources\Piano12.png" />
+    <None Include="Resources\Piano11.png" />
+    <None Include="Resources\Piano10.png" />
+    <None Include="Resources\essaiPersoJPG.JPG" />
+    <None Include="Resources\Splash1.jpg" />
+    <None Include="Resources\HyperArpV3.bmp" />
+    <None Include="Resources\HyperArpV4-48x48.ico" />
+    <None Include="Resources\Clavier.png" />
+    <None Include="Resources\Interrog.PNG" />
+    <None Include="Resources\Fonctionnalités_Windows.PNG" />
+    <None Include="Resources\Fonctionnalité W.bmp" />
+    <None Include="Resources\FR_Manuel.bmp" />
+    <None Include="Resources\WRENCH.ICO" />
+    <None Include="Resources\exportHTML3.png" />
+    <None Include="Resources\exportHTML2.png" />
+    <None Include="Resources\exportHTML.png" />
+    <None Include="Resources\VersLocators.png" />
+    <None Include="Resources\Stop24.png" />
+    <None Include="Resources\Stop24bis.png" />
+    <None Include="Resources\Start24bis.png" />
+    <None Include="Resources\Start24.png" />
+    <None Include="Resources\IconeJouerGammeDescendre.png" />
+    <None Include="Resources\IconeJouerGammeMonter.png" />
+    <None Include="Resources\IconeJouerGammeInverse copie.png" />
+    <None Include="Resources\IconeJouerGamme.PNG" />
+    <None Include="Resources\Play Inverse.png" />
+    <None Include="Resources\Play1.png" />
+    <None Include="Resources\ARW06LT bisVerte.png" />
+    <None Include="Resources\ARW06LT bis.png" />
+    <None Include="Resources\PRINT55.png" />
+    <None Include="Resources\PRINT1.BMP" />
+    <None Include="Resources\PRINT.BMP" />
+    <None Include="Resources\VW-DTLS.BMP" />
+    <None Include="Resources\PLAN.BMP" />
+    <None Include="Resources\MISC31.png" />
+    <None Include="Resources\GraphPour Modes.png" />
+    <None Include="Resources\Play22pxVert.png" />
+    <None Include="Resources\Play Inverse22Vertpx.png" />
+    <None Include="Resources\Play22px.png" />
+    <None Include="Resources\Play Inverse22px.png" />
+    <None Include="Resources\us.png" />
+    <None Include="Resources\00Preset.jpg" />
+    <None Include="Resources\12Preset.jpg" />
+    <None Include="Resources\11Preset.jpg" />
+    <None Include="Resources\10Preset.jpg" />
+    <None Include="Resources\09Preset.jpg" />
+    <None Include="Resources\08Preset.jpg" />
+    <None Include="Resources\07Preset.jpg" />
+    <None Include="Resources\06Preset.jpg" />
+    <None Include="Resources\05Preset.jpg" />
+    <None Include="Resources\04Preset.jpg" />
+    <None Include="Resources\03Preset.jpg" />
+    <None Include="Resources\02Preset.jpg" />
+    <None Include="Resources\01Preset.jpg" />
+    <None Include="Resources\02Preset.bmp" />
+    <None Include="Resources\01Preset.bmp" />
+    <None Include="Resources\01jpg.jpg" />
+    <None Include="Resources\Appli9.png" />
+    <None Include="Resources\Appli7.bmp" />
+    <None Include="Resources\Appli10.ico" />
+    <None Include="Resources\France.PNG" />
+    <None Include="Resources\Grande Bretagne.PNG" />
+    <None Include="Resources\emoticon.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\DELETE.BMP" />
+    <None Include="Resources\RazClavier.ICO" />
+    <None Include="Resources\RazClavier.bmp" />
+    <None Include="Resources\métro.wav" />
+    <None Include="Resources\métro.bmp" />
+    <None Include="Resources\ReinitGraph.png" />
+    <None Include="Resources\USA-UK3.PNG" />
+    <None Include="Resources\USA-UK.PNG" />
+    <None Include="Resources\Grande Bretagne20x18.PNG" />
+    <None Include="Resources\France16x11.png" />
+    <None Include="Resources\Quitter.png" />
+    <None Include="Resources\Culture2.png" />
+    <None Include="Resources\NOTE6.png" />
+    <None Include="Resources\NOTE5.png" />
+    <None Include="Resources\Accords16x16.png" />
+    <None Include="Resources\03 - Spalsh.PNG" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\Splash3.PNG" />
+    <None Include="Resources\Splash2.PNG" />
+    <None Include="Resources\Splash1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <FileAssociation Include=".zic4">
+      <Visible>False</Visible>
+      <Description>Extension de fichier du logiciel HyperArp</Description>
+      <Progid>HA-RTYui%2a65</Progid>
+      <DefaultIcon>HyperArp-48x48.ico</DefaultIcon>
+    </FileAssociation>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

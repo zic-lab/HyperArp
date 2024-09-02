@@ -1,0 +1,97 @@
+
+
+Ajout de plusieurs convert.toint16(Tbl..) dans Grid1_Keydown de PianoRoll et DrumEdit
+Suppression de b0 en haut de la liste des racines
+-------------------------------------------------------------------------------------------------------------------
+2020/12/24
+Version _30_00_02_Beta_V177
+Correction de bugs mineurs
+Stabilisation du logiciel
+Ajout des fichiers de démos zippé : Démo HyperArp MS GS wave table synth
+'
+Minor bug fixes
+Software Stabilization
+Added zipped demo files: Demo HyperArp MS GS wave table synth
+------------------------------------------------------------------------------------------------------------------------------------
+2020/11/09
+Version _30_00_02_Beta_V177
+Correction de bugs mineurs
+-------------------------------------------------------------------------------------------------------------------------------------------
+2020/10/15
+Version _0_0_30 v173
+Améliorations fondamentales du logiciel par ajout de fonctionnalités et améliorations diverses : 
+ - Ajout d'un éditeur clavier PianoRoll : il existe désormais 3 pianoRoll,
+ - Ajout d'une Automation dans les PianoRoll,
+ - Ajout d'une Automation dans la partie arpégiateur HyperArp,
+ - Ajout d'un éditeur de batterie,
+ - Ajout d'une fonction de transposition globale,
+ - Amélioration de l'ergonomie des éditeurs clavier : bouton  "Action", 
+ - Amélioration de l'argonomie générale,
+ - Amélioration de la table de mixage : passage à 10 canaux
+ - Amélioration de l'ergonomie des "Zones de Voicing"
+ - Possibilité de nommmer les canaux dans Arpégitateur, PianoRoll et Table de Mixage : nommage commun
+ - Simplification de la barre d'outils générale,
+ - Correction de bugs
+-------------------------------------------------------------------------------------------------------------------------------------------
+2020/02/02
+Version : _0_0_24
+Versions majeur
+Posibilités de positionner les locateurs de lecteur sur n'importe quelle n° de mesure.
+Amélioration diverses
+Corrections de bugs
+--------------------------------------------------------------------------------------------------------------------------------------------
+2019/11/27
+Version : _0_0_23
+Ajout d'un formulaire de proposition d'export des controleurs avant export au format fichier MIDI
+Retrait du menu Outils/Export CTRL
+Correction Bug : présence d'aftertouch avant chaque note dans fichier MIDI exporté
+--------------------------------------------------------------------------------------------------------------------------------------------
+2019/11/26
+Version : _0_0_22
+Tableaux des zones dépassaient leur conteneur par la droite
+Coorection des url vers les fichiers "Manuel" dans le bouton "?"
+--------------------------------------------------------------------------------------------------------------------------------------------
+2019/11/18
+Version : _0_0_21
+Correction erreur de mise à jour du délimiteur Début lors de l'ouverture d'un projet.
+Modification du bouton de reset MIDI pour "Panic MIDI"
+Ajout de ResetMidi() sur bouton Stop pour éviter les blocages de NoteOn (sans NoteOff)
+--------------------------------------------------------------------------------------------------------------------------------------------
+2019/11/11
+Version : _0_0_20
+Barre de transport :Début doit pouvoir être égal à Fin
+Mixage : indiquer PRoll1 et 2 pour les canaux 7 et 8
+PianoRoll : restitution de la valeur des longueurs de notes dans un pianoroll
+--------------------------------------------------------------------------------------------------------------------------------------------
+2019/11/05
+Version : _0_0_19
+PianoRoll : correction de "Impossible de décrémenter (NUMPAD 8) une valeur de dynamique de valeur 127"
+--------------------------------------------------------------------------------------------------------------------------------------------
+2019/11/03
+Version : _0_0_18
+PianoRoll : modification de la gestion de l'ancrage des editeurs pianoroll
+PIANORoll : arrêt incrémentation sélection de vélocités quand l'une arrive à 127
+--------------------------------------------------------------------------------------------------------------------------------------------
+2019/11/02
+Version : _0_0_17
+PianoRoll : amélioration collage d'une sélection
+Variations : Création procédure CTRL ConsistVar pour amélioration affichage des variation dans la Timeline
+Variations : Correction bug sur CTRL+ clic pour affectation d'une sélection
+--------------------------------------------------------------------------------------------------------------------------------------------
+2019/10/29
+Version : _0_0_16
+Remplacement du terme Calques MIDI par MIDI Modèle(fr - en) 
+--------------------------------------------------------------------------------------------------------------------------------------------
+2019/10/27
+Version : _0_0_15
+Correction cohérence des valeurs entre Début et Terme
+PianoRoll : Midification des valeurs de dynamique sur une sélection
+Déploiement : modification du répertoire de déploiement CalquesMIDI devient MidiModel
+--------------------------------------------------------------------------------------------------------------------------------------------
+2019/10/25
+Version : _0_0_14
+Premier déploiement
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+

@@ -1,0 +1,37 @@
+Usuelle;Usuelle;Maj;1;2;3;4;5;6;7;Fin; OK
+Usuelle;Usuelle;MinH;1;2;b3;4;5;b6;7;Fin; OK
+Usuelle;Usuelle;MinM;1;2;b3;4;5;6;7;Fin; OK
+Usuelle;Usuelle;PMin;1;b3;4;5;b7;Fin; OK
+Pentatoniques Bhupkali;5 notes;PMaj1;1;2;3;5;b6;Fin; OK
+Pentatoniques Penta3;5 notes;PMaj2;1;3;5;6;7;Fin; OK
+Pentatoniques;5 notes;PMin1;1;b3;4;5;b7;Fin; OK
+Pentatoniques Bhupalam;5 notes;PMin2;1;b2;b3;5;b6;Fin; OK
+Pentatoniques;5 notes;PMin3;1;b3;5;b6;b7;Fin; OK
+Pentatoniques Japanese;5 notes;PMin4;1;2;b3;5;b6;Fin; OK
+Pentatoniques Akebono;5 notes;PMin5;1;2;b3;5;6;Fin; OK
+Pentatoniques Abhogi;5 notes;PMin6;1;2;b3;4;6;Fin; OK
+Jazz;6 notes Augmented;Augmentee;1;b3;3;5;#5;7;Fin; 0K
+Jazz;6 notes Whole Tone;Ptons;1;2;3;#4;#5;b7;Fin; OK
+Blues;6 notes;Blues1;1;b3;4;#4;5;b7;Fin; OK
+Synthetiques Hexa1 Majeure;6 notes;6NotesMaj1;1;2;3;5;6;7;Fin; OK
+Synthetiques Tritone;6 notes;6NotesMaj2;1;b2;3;b5;5;b7;Fin; OK
+Synthetiques Scriabin;6 notes;6NotesMaj3;1;2;3;#4;6;b7;Fin; OK
+Synthetiques Hexa1 Minor;6 notes;6NotesMin1;1;2;b3;5;b6;b7;Fin; OK
+Synthetiques Hexa2 Minor;6 notes;6NotesMin2;1;2;b3;4;5;b6;Fin; OK
+Modales Phrygien Major;7 notes;PhrygienMaj;1;b2;b3;4;5;6;7;Fin; OK
+ModalesLydien_b2b7;7 notes;Lydien_b2b7;1;b2;3;#4;5;6;b7;Fin; OK
+ParPays Gypsy;7 notes;Hongroise1;1;2;b3;#4;5;b6;7;Fin; OK
+ParPays Hungarian Maj;7 notes;Hongroise2;1;#2;3;#4;5;6;b7;Fin; OK
+ParPays Neapolitan;7 notes;Napolitaine;1;b2;b3;4;5;b6;7;Fin; OK
+Modales Super Locrian;7 notes;SuperLocrien;1;b2;b3;b4;b5;b6;b7;Fin; OK
+ParPays Greek;7 notes;Grecque;1;2;b3;b4;5;b6;b7;Fin; OK
+ParPays Indian 1;7 notes;Indienne1;1;b2;b3;#4;5;b6;7;Fin; OK
+ParPays Indian 2 ou Lydian b3;7 notes;Indienne2;1;2;b3;#4;5;6;7;Fin; OK
+ParPays Arabic ou Mid East 1 ou Dbl Har Major;7 notes;Indienne3;1;b2;2;4;5;b6;6;Fin;OK
+ParPays Mid East 3;7 notes;MoyenOrientale;1;b2;b3;4;b5;6;b7;Fin; OK
+Synthetiques Harmonic Major;7 notes;MajH;1;2;3;4;5;b6;7;Fin; OK
+Synthetiques Enigmatic;7 notes;Enigmatique;1;b2;3;#4;#5;#6;7;Fin; OK
+Jazz Beboip;8 notes;Bebop1;1;2;3;4;5;6;b7;7;Fin; OK
+Jazz;8 notes;Diminuee;1;b2;b3;3;#4;5;6;b7;Fin; OK
+Blues Comnined;9 notes;Blues2;1;2;b3;3;4;#4;5;6;b7;Fin; OK
+ParPays Spanish;8 notes;Espagnole;1;b2;b3;3;4;5;b6;b7;Fin; OK
